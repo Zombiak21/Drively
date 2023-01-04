@@ -9,7 +9,6 @@
 
 //      NAV      //
 .nav {
-    position: fixed;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -144,6 +143,59 @@
 }
 
 //
+
+
+//      Main     //
+.main__wrapper {
+    width: 100%;
+
+    .main__items {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 4em 2em;
+
+        .main__item {
+
+            &-first {
+                margin-bottom: 2em;
+
+                h2 {
+                    font-size: 3rem;
+                    padding-bottom: 0.25em;
+
+                    span {
+                        color: $green;
+                        font-family: 'Nunito', sans-serif;
+                    }
+                }
+
+                p {
+                    font-size: 1.8rem;
+
+                    span {
+                        font-size: 2.5rem;
+                    }
+                }
+            }
+
+            &-secound {
+                width: 250px;
+                height: 250px;
+                background-color: $green;
+                border-radius: 35%;
+                transform: rotate(-5deg);
+                background-image: url('/img/car.svg');
+                background-repeat: no-repeat;
+                background-size: 75%;
+                background-position: center;
+                animation: carAnimation 2s ease infinite alternate backwards;
+
+            }
+        }
+    }
+}
 
 
 //      Media - 992px      //

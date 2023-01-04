@@ -35,13 +35,28 @@ body {
     transform: translateX(0);
   }
 }
+@-webkit-keyframes carAnimation {
+  from {
+    transform: translateY(0%);
+  }
+  to {
+    transform: translateY(10%);
+  }
+}
+@keyframes carAnimation {
+  from {
+    transform: translateY(0%);
+  }
+  to {
+    transform: translateY(10%);
+  }
+}
 .wrapper {
   max-width: 1400px;
   margin: 0 auto;
 }
 
 .nav {
-  position: fixed;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -153,6 +168,47 @@ body {
 .nav-items-animation {
   -webkit-animation: navItemsAnimation 1s both;
           animation: navItemsAnimation 1s both;
+}
+
+.main__wrapper {
+  width: 100%;
+}
+.main__wrapper .main__items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 4em 2em;
+}
+.main__wrapper .main__items .main__item-first {
+  margin-bottom: 2em;
+}
+.main__wrapper .main__items .main__item-first h2 {
+  font-size: 3rem;
+  padding-bottom: 0.25em;
+}
+.main__wrapper .main__items .main__item-first h2 span {
+  color: #5f9ea0;
+  font-family: "Nunito", sans-serif;
+}
+.main__wrapper .main__items .main__item-first p {
+  font-size: 1.8rem;
+}
+.main__wrapper .main__items .main__item-first p span {
+  font-size: 2.5rem;
+}
+.main__wrapper .main__items .main__item-secound {
+  width: 250px;
+  height: 250px;
+  background-color: #5f9ea0;
+  border-radius: 35%;
+  transform: rotate(-5deg);
+  background-image: url("/img/car.svg");
+  background-repeat: no-repeat;
+  background-size: 75%;
+  background-position: center;
+  -webkit-animation: carAnimation 2s ease infinite alternate backwards;
+          animation: carAnimation 2s ease infinite alternate backwards;
 }
 
 @media (min-width: 992px) {

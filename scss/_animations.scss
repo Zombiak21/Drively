@@ -8,3 +8,14 @@
         transform: translateX(0);
     }
 }
+
+//      MAIN      //
+@keyframes carAnimation {
+    from {
+        transform: translateY(0%);
+    }
+
+    to {
+        transform: translateY(10%);
+    }
+}
