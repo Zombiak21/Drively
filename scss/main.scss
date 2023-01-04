@@ -180,6 +180,22 @@
                 }
             }
 
+            &-btn {
+                margin-top: 0.5em;
+                padding: 1em 2em;
+                background-color: $green;
+                font-family: 'Nunito', sans-serif;
+                color: white;
+                border: none;
+                font-size: 1.5rem;
+                border-radius: 25px;
+                transition: 0.3s transform;
+
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
+
             &-secound {
                 width: 250px;
                 height: 250px;
@@ -191,7 +207,6 @@
                 background-size: 75%;
                 background-position: center;
                 animation: carAnimation 2s ease infinite alternate backwards;
-
             }
         }
     }
@@ -232,5 +247,21 @@
 
     .burger-btn {
         display: none;
+    }
+
+    .main__wrapper {
+        .main__items {
+            flex-direction: row;
+            margin: 10em 2em;
+            gap: 40%;
+
+            .main__item {
+                &-btn {
+                    margin-top: 0.5em;
+                    padding: 1em 3em;
+                    font-size: 1.5rem;
+                }
+            }
+        }
     }
 }

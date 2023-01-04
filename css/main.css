@@ -197,6 +197,20 @@ body {
 .main__wrapper .main__items .main__item-first p span {
   font-size: 2.5rem;
 }
+.main__wrapper .main__items .main__item-btn {
+  margin-top: 0.5em;
+  padding: 1em 2em;
+  background-color: #5f9ea0;
+  font-family: "Nunito", sans-serif;
+  color: white;
+  border: none;
+  font-size: 1.5rem;
+  border-radius: 25px;
+  transition: 0.3s transform;
+}
+.main__wrapper .main__items .main__item-btn:hover {
+  transform: scale(1.1);
+}
 .main__wrapper .main__items .main__item-secound {
   width: 250px;
   height: 250px;
@@ -238,5 +252,15 @@ body {
   }
   .burger-btn {
     display: none;
+  }
+  .main__wrapper .main__items {
+    flex-direction: row;
+    margin: 10em 2em;
+    gap: 40%;
+  }
+  .main__wrapper .main__items .main__item-btn {
+    margin-top: 0.5em;
+    padding: 1em 3em;
+    font-size: 1.5rem;
   }
 }/*# sourceMappingURL=main.css.map */
