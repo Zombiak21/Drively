@@ -217,7 +217,7 @@ body {
   background-color: #5f9ea0;
   border-radius: 35%;
   transform: rotate(-5deg);
-  background-image: url("/img/car.svg");
+  background-image: url("./img/car.svg");
   background-repeat: no-repeat;
   background-size: 75%;
   background-position: center;
