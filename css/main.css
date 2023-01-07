@@ -18,6 +18,22 @@ body {
   background-color: #f5f3e6;
 }
 
+::-webkit-scrollbar {
+  width: 0.5em;
+  background-color: #fff;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 1px 1px 10px rgba(46, 46, 46, 0.2);
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #5f9ea0;
+}
+
 @-webkit-keyframes navItemsAnimation {
   from {
     transform: translateX(200%);

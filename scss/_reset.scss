@@ -22,3 +22,19 @@ body {
     color: $main-text;
     background-color: $bg-color;
 }
+
+::-webkit-scrollbar {
+    width: 0.5em;
+    background-color: #fff;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 1px 1px 10px rgba(46, 46, 46, 0.2);
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: $green;
+}
