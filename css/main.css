@@ -245,7 +245,7 @@ body {
   background-color: #5f9ea0;
   border-radius: 35%;
   transform: rotate(-5deg);
-  background-image: url("../img/car.svg");
+  background-image: url("../img/logo/car.svg");
   background-repeat: no-repeat;
   background-size: 75%;
   background-position: center;
@@ -266,7 +266,7 @@ body {
   font-family: "Nunito", sans-serif;
   font-size: 2.6rem;
 }
-.offers .wrapper {
+.offers__wrapper {
   margin: 0 auto;
   width: 100%;
   max-width: 1200px;
@@ -320,6 +320,61 @@ body {
   box-shadow: 0 0 0 0.5em transparent;
 }
 
+.vehicles {
+  position: relative;
+  overflow: hidden;
+}
+.vehicles__wrapper {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1200px;
+}
+.vehicles__title {
+  padding: 1.5em;
+}
+.vehicles__title-h2 {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Nunito", sans-serif;
+  font-size: 2.6rem;
+}
+.vehicles__gallery {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+.vehicles__gallery-box {
+  position: relative;
+}
+.vehicles__gallery-box img {
+  height: 300px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 15px;
+}
+.vehicles__gallery-shadow {
+  display: flex;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 15px;
+  transition: 0.2s ease-out;
+}
+.vehicles__gallery-shadow:hover {
+  opacity: 0.8;
+}
+.vehicles__gallery-text {
+  font-size: 2.5rem;
+  color: #fff;
+}
+
 @media (min-width: 576px) {
   .offers__option {
     display: flex;
@@ -340,6 +395,11 @@ body {
   }
   .offers__option-btn {
     padding: 1em;
+  }
+}
+@media (min-width: 768px) {
+  .vehicles__gallery {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 @media (min-width: 992px) {
@@ -382,7 +442,7 @@ body {
   }
   .offers__option-img {
     -o-object-fit: cover;
-    object-fit: cover;
+       object-fit: cover;
     height: 300px;
   }
   .offers__option-text {
