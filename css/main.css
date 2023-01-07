@@ -353,6 +353,12 @@ body {
      object-fit: cover;
   border-radius: 15px;
 }
+.vehicles__gallery-box:hover .vehicles__gallery-shadow {
+  opacity: 0.8;
+}
+.vehicles__gallery-box:hover .vehicles__gallery-text {
+  display: inline-block;
+}
 .vehicles__gallery-shadow {
   display: flex;
   opacity: 0;
@@ -365,13 +371,7 @@ body {
   width: 100%;
   background-color: rgba(0, 0, 0, 0.7);
   border-radius: 15px;
-  transition: 0.2s ease-out;
-}
-.vehicles__gallery-shadow:hover {
-  opacity: 0.8;
-}
-.vehicles__gallery-shadow:hover .vehicles__gallery-text {
-  display: inline-block;
+  transition: 0.3s;
 }
 .vehicles__gallery-text {
   display: none;

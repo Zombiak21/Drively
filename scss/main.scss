@@ -330,6 +330,16 @@
                 object-fit: cover;
                 border-radius: 15px;
             }
+
+            &:hover {
+                .vehicles__gallery-shadow {
+                    opacity: 0.8;
+                }
+
+                .vehicles__gallery-text {
+                    display: inline-block;
+                }
+            }
         }
 
         &-shadow {
@@ -344,15 +354,7 @@
             width: 100%;
             background-color: rgba(0, 0, 0, 0.7);
             border-radius: 15px;
-            transition: 0.2s ease-out;
-
-            &:hover {
-                opacity: 0.8;
-
-                .vehicles__gallery-text {
-                    display: inline-block;
-                }
-            }
+            transition: 0.3s;
         }
 
         &-text {
