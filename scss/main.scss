@@ -325,8 +325,8 @@
             position: relative;
 
             img {
-                height: 300px;
                 width: 100%;
+                height: 100%;
                 object-fit: cover;
                 border-radius: 15px;
             }
@@ -348,10 +348,15 @@
 
             &:hover {
                 opacity: 0.8;
+
+                .vehicles__gallery-text {
+                    display: inline-block;
+                }
             }
         }
 
         &-text {
+            display: none;
             font-size: 2.5rem;
             color: #fff;
         }
